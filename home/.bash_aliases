@@ -1,7 +1,7 @@
 # My custom stuff
 
 # System services
-alias stats="sudo systemctl status openvpn deluged plexmediaserver navidrome"
+alias stats="sudo systemctl status plexmediaserver navidrome apache2 gitea jackett sonarr Lidarr"
 alias restart="sudo systemctl restart $1"
 alias status="sudo systemctl status"
 alias checkvpn="curl --interface tun0 ipecho.net/plain && printf '\n'"
@@ -41,3 +41,8 @@ alias rm='rm -I --preserve-root'
 alias chown='chown --preserve-root'
 alias chmod='chmod --preserve-root'
 alias chgrp='chgrp --preserve-root'
+
+# git shortcuts
+alias ga='git add'
+alias gf='git fetch'
+alias gc='git clone'
