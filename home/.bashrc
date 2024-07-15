@@ -118,7 +118,7 @@ fi
 
 # Fun terminal scripts
 #cowsay -f $(ls /usr/share/cowsay/cows/ | shuf -n1) $(fortune)
-pokemon-colorscripts -r
+#pokemon-colorscripts -r
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
