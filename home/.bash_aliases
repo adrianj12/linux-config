@@ -50,3 +50,16 @@ alias gd='git diff'
 alias gm='git merge'
 alias clone='git clone'
 alias gp='git push'
+
+
+# Cygwin C++ compiler
+alias gcc32='i686-w64-mingw32-gcc'
+alias g++32='i686-w64-mingw32-g++'
+alias gcc='x86_64-w64-mingw32-gcc'
+alias g++='x86_64-w64-mingw32-g++ -static'
+alias c++='x86_64-w64-mingw32-g++ -static'
+
+# CS 491 shortcuts
+alias hopper='ssh ajabeyta@hopper.alliance.unm.edu'
+alias pizzatunnel='ssh -D 1337 -q -C -N -f ajabeyta@hopper.alliance.unm.edu'
+
