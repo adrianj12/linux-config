@@ -44,7 +44,9 @@ alias chgrp='chgrp --preserve-root'
 
 # git shortcuts
 alias ga='git add'
-alias gm='git commit -m'
+alias gc='git commit -m'
 alias gf='git fetch'
-alias gc='git clone'
+alias gd='git diff'
+alias gm='git merge'
+alias clone='git clone'
 alias gp='git push'
