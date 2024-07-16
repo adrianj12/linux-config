@@ -168,4 +168,6 @@ checkIP()
 export PATH="$PATH:/home/adrian/.local/bin"
 
 # start ssh agent for git
-eval `$(ssh-agent -s)` 0>/dev/null
+if [[ -z $(ps aux | grep [s]sh-agent) ]]; then
+    eval `$(ssh-agent -s)` 0>/dev/null
+fi
