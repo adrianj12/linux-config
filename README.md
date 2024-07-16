@@ -1,2 +1,2 @@
 # linux-config
-user config files for linux
+Miscellaneous user config files for linux Bash and other basic applications
