@@ -163,3 +163,9 @@ checkIP()
 #  sudo chown -R plex:users "$dest"
 
 #}
+
+# Created by `pipx` on 2023-12-27 07:57:02
+export PATH="$PATH:/home/adrian/.local/bin"
+
+# start ssh agent for git
+eval "$(ssh-agent -s)"
