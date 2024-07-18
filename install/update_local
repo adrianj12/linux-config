@@ -7,4 +7,3 @@ cp -u ../home/.bashrc ~/
 cp -ur ../home/.emacs.d/ ~/
 cp -u ../home/.gitconfig ~/
 cp -ur ../home/.ssh/ ~/
-
