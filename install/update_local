@@ -8,7 +8,3 @@ cp -ur ../home/.emacs.d/ ~/
 cp -u ../home/.gitconfig ~/
 cp -ur ../home/.ssh/ ~/
 
-source ${HOME}/.bash_aliases
-source ${HOME}/.bash_logout
-source ${HOME}/.bash_profile
-source ${HOME}/.bashrc
