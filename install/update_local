@@ -1,9 +1,9 @@
 #!/bin/bash
 
-cp -u ../home/.bash_aliases ~/
-cp -u ../home/.bash_logout ~/
-cp -u ../home/.bash_profile ~/
-cp -u ../home/.bashrc ~/
-cp -ur ../home/.emacs.d/ ~/
-cp -u ../home/.gitconfig ~/
-cp -ur ../home/.ssh/ ~/
+cp ../home/.bash_aliases ~/
+cp ../home/.bash_logout ~/
+cp ../home/.bash_profile ~/
+cp ../home/.bashrc ~/
+cp -R ../home/.emacs.d/ ~/
+cp ../home/.gitconfig ~/
+cp -R ../home/.ssh/ ~/
