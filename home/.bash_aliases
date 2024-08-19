@@ -24,7 +24,6 @@ alias connections="sudo netstat -tunlp"
 alias ping='ping -c 5'
 alias ports='netstat -tulanp'
 alias path='echo -e ${PATH//:/\\n}'
-alias free='free -m -l -t'
 alias psmem='ps auxf | sort -nr -k 4 | head -10'
 alias pscpu='ps auxf | sort -nr -k 3 | head -10'
 
