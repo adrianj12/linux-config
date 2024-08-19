@@ -118,7 +118,7 @@ fi
 
 # Fun terminal scripts
 #cowsay -f $(ls /usr/share/cowsay/cows/ | shuf -n1) $(fortune)
-pokemon-colorscripts -r
+#pokemon-colorscripts -r
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -167,7 +167,5 @@ checkIP()
 # Created by `pipx` on 2023-12-27 07:57:02
 export PATH="$PATH:/home/adrian/.local/bin"
 
-# start ssh agent for git
-if [[ -z $(ps aux | grep [s]sh-agent) ]]; then
-    eval `$(ssh-agent -s)` 0>/dev/null
-fi
+# Load ssh-agent init file
+[ -e "${HOME}/.bash_ssh" ] && source "${HOME}/.bash_ssh"

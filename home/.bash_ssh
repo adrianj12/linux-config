@@ -1,0 +1,20 @@
+# start ssh agent for git
+AGENT_FILE="${HOME}/.ssh-agent.conf"
+
+if [[ -z $(ps aux | grep [s]sh-agent) ]]; then
+
+    printf "Starting ssh-agent...\n"
+    ssh-agent -s >| "$AGENT_FILE"
+    sed -i '3d' "$AGENT_FILE"
+    printf "ssh-add -q\n" >>  "$AGENT_FILE"
+fi
+if [[ -e $AGENT_FILE ]]; then
+
+    source $AGENT_FILE
+fi
+if [[ ! `ps -p $SSH_AGENT_PID` ]]; then
+
+    printf "Could not start SSH agent\n"
+else
+    printf "ssh-agent at $SSH_AGENT_PID:$SSH_AUTH_SOCK\n"
+fi
