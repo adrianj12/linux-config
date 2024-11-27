@@ -134,32 +134,3 @@ editservice ()
 {
     sudo nano "/etc/systemd/system/$1.service"
 }
-
-unrarall ()
-{
-    for f in */*.rar ;
-    do unrar x "$f" ./ ;
-    done
-}
-
-checkIP()
-{
-    dig +short myip.opendns.com @resolver1.opendns.com
-}
-
-#copytor () {
-
-#  source="/Torrents/Completed/$1"
-#  dest="/media/Media/$2/$1"
-
-#  if [[ ! -d "$dest" ]]; then
-#    sudo mkdir "$dest"
-#  fi
-
-#  find "$source" -type f \( -name "*.srt" -o -name "*.mkv" -o -name "*.mp4" -o -name "*.avi" \
-#                    -o -name "*.mpg" -o -name "*.mpeg" \) -exec sudo cp -v -u -r {} "$dest" \;
-
-#  sudo chmod -R 755 "$dest"
-#  sudo chown -R plex:users "$dest"
-
-#}
